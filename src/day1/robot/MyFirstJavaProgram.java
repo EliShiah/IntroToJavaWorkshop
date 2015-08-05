@@ -10,9 +10,10 @@ public class MyFirstJavaProgram {
 		// START HERE
 Robot bobby = new Robot();
 bobby.penDown();
-bobby.setPenColor(Color.BLUE);
-bobby.setSpeed(400);
+bobby.setRandomPenColor();
+bobby.setSpeed(10);
 for (int i = 0; i < 33; i++) {
+bobby.setRandomPenColor();
 bobby.hide();
 bobby.turn(45);
 bobby.move(100);
